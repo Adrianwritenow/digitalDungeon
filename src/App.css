@@ -1,0 +1,61 @@
+.pics{
+ height: 300px;
+  max-width: 50%;
+  padding:10px;
+}
+header{
+  margin-left:25%;
+  margin-bottom:2%;
+  color: #00FFEF;
+
+}
+li{
+  display:block;
+  float: left;
+  padding:10px;
+
+}
+a:hover{
+  font-weight:bold;
+}
+body, main{
+ background-image:url("http://a1star.com/images/starsglow1.gif");
+font-family:"Comic Sans MS", "Comic Sans";
+display:flex;
+  color:gold;
+}
+
+body{
+flex-direction: column;
+}
+
+main{
+flex-direction: row;
+  flex:auto;
+}
+article{
+
+  flex:2;
+  overflow-y:auto;
+  border:5px solid;
+  text-align:center;
+}
+
+aside{
+  border:5px solid;
+  border-left:0px;
+  flex:1;
+  overflow-y:auto;
+
+}
+p{
+ max-width:50%;
+  margin-left:25%;
+}
+#baby{
+  height:75px;
+  margin-top:-30px;
+}
+h1,h2,h3{
+  color: red;
+}
