@@ -1,34 +1,160 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import Footer from './components/footer';
 import './App.css';
+
 
 class App extends Component {
   render() {
+
+    (function fairyDustCursor() {
+
+  var possibleColors = ["#D61C59", "#E7D84B", "#1B8798"]
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+  var cursor = {x: width/2, y: width/2};
+  var particles = [];
+
+  function init() {
+    bindEvents();
+    loop();
+  }
+
+  // Bind events that are needed
+  function bindEvents() {
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('touchmove', onTouchMove);
+    document.addEventListener('touchstart', onTouchMove);
+
+    window.addEventListener('resize', onWindowResize);
+  }
+
+  function onWindowResize(e) {
+    width = window.innerWidth;
+    height = window.innerHeight;
+  }
+
+  function onTouchMove(e) {
+    if( e.touches.length > 0 ) {
+      for( var i = 0; i < e.touches.length; i++ ) {
+        addParticle( e.touches[i].clientX, e.touches[i].clientY, possibleColors[Math.floor(Math.random()*possibleColors.length)]);
+      }
+    }
+  }
+
+  function onMouseMove(e) {
+    cursor.x = e.clientX;
+    cursor.y = e.clientY;
+
+    addParticle( cursor.x, cursor.y, possibleColors[Math.floor(Math.random()*possibleColors.length)]);
+  }
+
+  function addParticle(x, y, color) {
+    var particle = new Particle();
+    particle.init(x, y, color);
+    particles.push(particle);
+  }
+
+  function updateParticles() {
+
+    // Updated
+    for( var i = 0; i < particles.length; i++ ) {
+      particles[i].update();
+    }
+
+    // Remove dead particles
+    for( var i = particles.length -1; i >= 0; i-- ) {
+      if( particles[i].lifeSpan < 0 ) {
+        particles[i].die();
+        particles.splice(i, 1);
+      }
+    }
+
+  }
+
+  function loop() {
+    requestAnimationFrame(loop);
+    updateParticles();
+  }
+
+  /**
+   * Particles
+   */
+
+  function Particle() {
+
+    this.character = "*";
+    this.lifeSpan = 120; //ms
+    this.initialStyles ={
+      "position": "absolute",
+      "display": "block",
+      "pointerEvents": "none",
+      "z-index": "10000000",
+      "fontSize": "16px",
+      "will-change": "transform"
+    };
+
+    // Init, and set properties
+    this.init = function(x, y, color) {
+
+      this.velocity = {
+        x:  (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 2),
+        y: 1
+      };
+
+      this.position = {x: x - 10, y: y - 20};
+      this.initialStyles.color = color;
+
+      this.element = document.createElement('span');
+      this.element.innerHTML = this.character;
+      applyProperties(this.element, this.initialStyles);
+      this.update();
+
+      document.body.appendChild(this.element);
+    };
+
+    this.update = function() {
+      this.position.x += this.velocity.x;
+      this.position.y += this.velocity.y;
+      this.lifeSpan--;
+
+      this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px, 0) scale(" + (this.lifeSpan / 120) + ")";
+    }
+
+    this.die = function() {
+      this.element.parentNode.removeChild(this.element);
+    }
+
+  }
+
+  /**
+   * Utils
+   */
+
+  // Applies css `properties` to an element.
+  function applyProperties( target, properties ) {
+    for( var key in properties ) {
+      target.style[ key ] = properties[ key ];
+    }
+  }
+
+  init();
+})();
+
+
     return (
-      <div className="App">
-      <header>
- <ul>
-   <li> Zdzislaw </li>
-   <li> Tweets </li>
-   <li> About Daniel </li>
-   <li> Other Amazing Artists</li>
- </ul>
-</header>
-<main>
- <article>
-   <h1><img height="50px"src="https://addyosmani.com/fitc-wccdt/images/fire.gif"/>About Me<img height="50px"src="https://addyosmani.com/fitc-wccdt/images/fire.gif"/></h1>
-   <img height="400px" src="https://github.com/Dkazem91/Portfolio-Page/blob/master/GithubImages/307726_10150299133111786_1683580760_n.jpg?raw=true"/>
+      <div classNameName="App">
+        <header>
+         <ul>
+           <li> Characters </li>
+           <li> Tweets </li>
+           <li> About DD </li>
+           <li> Support</li>
+         </ul>
+        </header>
 
-   <p class="descriptions"> I am a 25 year finance graduate from Raleigh NC. I've got a degree in finance, and I've been looking for other things to do ever since. Raleigh NC is my hometown, go State!</p>
-   <p class="descriptions"> I really enjoy playing guitar, writing nonsense, making electronic music, enjoying art with genuine appreciation and ironic sophistication. Currently I'm very much into vaporwave music, hence this lovably tacky webpage of mine inspired by what you would find on GeoCities.</p>
-   <p class="descriptions"> I'm dead focused and serious on getting a career in coding. Learning on my own and then having to put it all on hold was hard. I was not living in a good environment and when things got worse I didn't really have a choice. Since then I have taken steps to keep the dream alive despite working again full time. Between work and 2 comp sci summer courses I am busy all day and night; I am stretching myself thin and still looking for other opportunities like Holberton. I know if my full attention was in learning to code, I would be there right now. I'm at the point financially and mentally where I will be more than ready to take the dive and hit the ground running after this summer is over. Thanks. </p>
-
- </article>
- <aside>
-   <p> "placeholder to add comment thread later". </p>
- </aside>
-
-</main>
+        <Footer />
       </div>
     );
   }
