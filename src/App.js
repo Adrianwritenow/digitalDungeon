@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import SplashPage from './components/splashPage'
 
 import Footer from './components/footer';
 import './App.css';
@@ -145,16 +146,12 @@ class App extends Component {
 
     return (
       <div classNameName="App">
-        <header>
-         <ul>
-           <li> Characters </li>
-           <li> Tweets </li>
-           <li> About DD </li>
-           <li> Support</li>
-         </ul>
-        </header>
-
-        <Footer />
+        <BrowserRouter>
+        <Switch>
+        <Route exact path="/" component={SplashPage}/>
+        </Switch>
+      </BrowserRouter>
+      <Footer />
       </div>
     );
   }
