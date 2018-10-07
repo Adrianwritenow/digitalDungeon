@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "animate.css/animate.min.css";
+import AboutUs from '../aboutUs';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
@@ -15,8 +16,10 @@ class SplashPage extends Component {
 
     return (
       <div className="splashContainer">
+        <section>
         <div className='titleContainer'>
-          <ScrollAnimation animateIn="fadeInLeft">
+
+          <ScrollAnimation delay={400} animateIn="fadeInLeft">
             <img className='devilFireL' src='https://web.archive.org/web/20091026235054/http://de.geocities.com/duellderchatter/devilfire.gif'/>
           </ScrollAnimation>
 
@@ -27,12 +30,15 @@ class SplashPage extends Component {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="fadeInRight">
+          <ScrollAnimation delay={400} animateIn="fadeInRight">
             <img  className='devilFireR' src='https://web.archive.org/web/20091026235054/http://de.geocities.com/duellderchatter/devilfire.gif'/>
           </ScrollAnimation>
 
         </div>
-
+        </section>
+        <section>
+          <AboutUs />
+        </section>
       </div>
     );
   }

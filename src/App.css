@@ -38,6 +38,7 @@ margin-bottom: 0px;
 .splashContainer{
   display: flex ;
   justify-content: center ;
+  flex-wrap: wrap;
   height: 100%;
   width: 90%;
 }
@@ -60,7 +61,6 @@ margin-bottom: 0px;
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    width: 600px;
 
 }
 
@@ -86,4 +86,15 @@ margin-bottom: 0px;
 .navbar{
   margin-bottom: 0px;
   width: 100%
+}
+section{
+  display: block;
+  width: 100vw;
+}
+
+
+.aboutUsCard{
+  width: 70%;
+  background-color: rgba(52, 64, 64, .65);
+  box-shadow: 6px 6px 60px green;
 }
