@@ -1,13 +1,12 @@
-html{
-  height: 1280px;
-}
-body{
-  height:1000px;
-}
-#root{
-  width: 100%;
-}
 
+
+
+/* .App{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+} */
 
 
 body, main{
@@ -33,6 +32,7 @@ margin-bottom: 0px;
   display: flex ;
   justify-content: center ;
   height: 100%;
+  width: 90%;
 }
 
 .titleContainer{
@@ -48,17 +48,34 @@ margin-bottom: 0px;
     0 0 100px #0ff,
     0 0 150px #0ff;
 
-    margin-top: 15%;
+    margin-top: 10%;
     /* margin-left: 15%; */
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    font-size: 3.5em;
-    width: 320px;
+    width: 600px;
 
 }
-.titleContainer>h1, h3{
+
+.titleText{
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.titleText>h1, h3{
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 7em;
 
+
+}
+
+.headerContainer{
+  width: 100vw;
+}
+
+.navbar{
+  margin-bottom: 0px;
 }

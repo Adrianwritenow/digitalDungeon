@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import SplashPage from './components/splashPage'
 
 import Footer from './components/footer';
+import Header from './components/header';
+
 import './App.css';
 
 
@@ -146,12 +148,13 @@ class App extends Component {
 
     return (
       <div className="App">
-        <BrowserRouter>
-        <Switch>
-        <Route exact path="/" component={SplashPage}/>
-        </Switch>
-      </BrowserRouter>
-      <Footer />
+        <Header />
+          <BrowserRouter>
+            <Switch>
+              <Route exact path="/" component={SplashPage}/>
+            </Switch>
+          </BrowserRouter>
+        <Footer />
       </div>
     );
   }
