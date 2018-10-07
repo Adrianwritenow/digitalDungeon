@@ -4,67 +4,17 @@ html{
 body{
   height:1000px;
 }
+#root{
+  width: 100%;
+}
 
-.pics{
- height: 300px;
-  max-width: 50%;
-  padding:10px;
-}
-header{
-  margin-left:25%;
-  margin-bottom:2%;
-  color: #00FFEF;
 
-}
-li{
-  display:block;
-  float: left;
-  padding:10px;
 
-}
-a:hover{
-  font-weight:bold;
-}
 body, main{
  background-image:url("http://a1star.com/images/starsglow1.gif");
 font-family:"Comic Sans MS", "Comic Sans";
 display:flex;
   color:gold;
-}
-
-body{
-flex-direction: column;
-}
-
-main{
-flex-direction: row;
-  flex:auto;
-}
-article{
-
-  flex:2;
-  overflow-y:auto;
-  border:5px solid;
-  text-align:center;
-}
-
-aside{
-  border:5px solid;
-  border-left:0px;
-  flex:1;
-  overflow-y:auto;
-
-}
-p{
- max-width:50%;
-  margin-left:25%;
-}
-#baby{
-  height:75px;
-  margin-top:-30px;
-}
-h1,h2,h3{
-  color: red;
 }
 
 .footerContainer{
@@ -77,4 +27,38 @@ bottom: 0px;
 left: 0px;
 right: 0px;
 margin-bottom: 0px;
+}
+
+.splashContainer{
+  display: flex ;
+  justify-content: center ;
+  height: 100%;
+}
+
+.titleContainer{
+  font-family: 'VT323', monospace;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+
+    margin-top: 15%;
+    /* margin-left: 15%; */
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 3.5em;
+    width: 320px;
+
+}
+.titleContainer>h1, h3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+
 }

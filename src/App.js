@@ -145,7 +145,7 @@ class App extends Component {
 
 
     return (
-      <div classNameName="App">
+      <div className="App">
         <BrowserRouter>
         <Switch>
         <Route exact path="/" component={SplashPage}/>
