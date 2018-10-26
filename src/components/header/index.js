@@ -20,6 +20,12 @@ class Header extends Component {
               <a className='navLink'>About</a>
               </NavItem>
               <NavItem eventKey={2} href="#">
+              <a className='navLink'>Cast</a>
+              </NavItem>
+              <NavItem eventKey={3} href="#">
+              <a className='navLink'>Characters</a>
+              </NavItem>
+              <NavItem eventKey={4} href="#">
               <a className='navLink'>Support</a>
               </NavItem>
             </Nav>
