@@ -16,13 +16,13 @@ class Header extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} href="#">
+              <NavItem eventKey={1} href="/">
               <a className='navLink'>About</a>
               </NavItem>
-              <NavItem eventKey={2} href="#">
+              <NavItem eventKey={2} href="/cast">
               <a className='navLink'>Cast</a>
               </NavItem>
-              <NavItem eventKey={3} href="#">
+              <NavItem eventKey={3} href="/characters">
               <a className='navLink'>Characters</a>
               </NavItem>
               <NavItem eventKey={4} href="#">
