@@ -166,9 +166,6 @@ class SplashPage extends Component {
             <img  className='devilFireR' src='https://web.archive.org/web/20091026235054/http://de.geocities.com/duellderchatter/devilfire.gif'/>
           </ScrollAnimation>
         </div>
-          <div className='demBoysContainer'>
-            <img className='demBoys'src='images/digital_dungeoneers.png' alt='demBoys'/>
-          </div>
         </section>
         <section>
           <AboutUs />

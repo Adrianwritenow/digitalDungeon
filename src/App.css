@@ -3,10 +3,7 @@ html{
   display: flex;
   justify-content: center;
 }
-body{
-  width: 100%;
 
-}
 
 .App{
   display: flex;
@@ -105,4 +102,92 @@ section{
 
 .demBoys{
   width: 100%;
+}
+
+
+
+
+
+/////////////
+
+$phone-width: 768px;
+
+@mixin mobile {
+  @media only screen and (min-width: 1px) and (max-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+.scroll {
+  // if mobile then enable
+  @include mobile {
+    overflow-y: scroll;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  // momentum scrolling. usually improves experience, but here, leave disabled
+  // -webkit-overflow-scrolling: touch;
+}
+.container {
+  @extend .scroll;
+}
+.container-2 {
+  @extend .scroll;
+  height: 100vh;
+}
+.slide {
+  background: center/cover fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.slide {
+  color: white;
+  text-shadow: 1px 1px black;
+
+  // text center
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slide1 {
+  background-image: url('/images/digital_dungeoneers.png');
+}
+#slide2 {
+  background-image: url('/images/digital_dungeoneers.png');
+}
+#slide3 {
+  background-image: url('http://img.wallpaperfolder.com/f/48F7528B9304/cool-2014-mclaren-concept-sports-car.jpg');
+}
+#slide4 {
+  background-image: url('/images/digital_dungeoneers.png');
+}
+
+
+.words {
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+a {
+  color: #4285F4;
+  text-decoration: none;
+  &:hover {
+    border-bottom: 1px solid #4285F4;
+  }
+}
+code {
+  background: #ddd;
+  padding: 2px;
+}
+ul, ol {
+  text-align: left;
 }
