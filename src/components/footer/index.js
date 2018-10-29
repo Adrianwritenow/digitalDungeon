@@ -6,7 +6,10 @@ class Footer extends Component {
 
     return (
       <div className='footerContainer'>
-        <img src='https://web.archive.org/web/20090831103008im_/http://geocities.com/japan_casino/Japanese.gif'/>
+        <img src='images/instaLogo.png' alt='instagram'/>
+        <img src='images/twitterLogo.png' alt='twitter'/>
+        <img src='images/soundCloud.png' alt='soundCloud'/>
+        <img src='images/patreonLogo.png' alt='patreon'/>
       </div>
 
 
