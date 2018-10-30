@@ -6,6 +6,10 @@ class Cast extends Component {
 
     return (
       <div className='castContainer'>
+
+      <section>
+        <h1>CAST</h1>
+      </section>
         <div className='castCard'>
           <h1>CAST 1</h1>
           <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play

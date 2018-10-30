@@ -33,7 +33,21 @@ margin-bottom: 0px;
 }
 
 .footerContainer img{
-  width: 10vh;
+  width: 8vh;
+  margin-left: 28px;
+  box-shadow: 10px 0px 10px black;
+  border-radius: 100%;
+  transition: padding,box-shadow .5s ;
+
+
+}
+
+.footerContainer img:hover{
+  width: 8vh;
+  box-shadow: 3px 0px 5px black;
+  border-radius: 100%;
+  padding: 1px;
+
 }
 
 .splashContainer{
@@ -91,6 +105,7 @@ margin-bottom: 0px;
 section{
   display: block;
   width: 100vw;
+  height: 90vh;
 }
 
 
@@ -131,6 +146,7 @@ $phone-width: 768px;
 }
 .container {
   @extend .scroll;
+  width: 100vw;
 }
 .container-2 {
   @extend .scroll;

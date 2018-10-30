@@ -6,6 +6,9 @@ class Characters extends Component {
 
     return (
       <div className='characterContainer'>
+      <section>
+        <h1>Characters</h1>
+      </section>
 
       </div>
 
