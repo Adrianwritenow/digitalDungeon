@@ -8,7 +8,10 @@ class Cast extends Component {
       <div className='castContainer'>
 
       <section>
+
+      <div className='titleContainer'>
         <h1>CAST</h1>
+      </div>
       </section>
         <div className='castCard'>
           <h1>CAST 1</h1>
