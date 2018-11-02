@@ -149,20 +149,20 @@ class SplashPage extends Component {
 
     return (
       <div className="splashContainer">
-        <section>
+        <section className='titleSection'>
         <div className='titleContainer'>
 
-          <ScrollAnimation delay={400} animateIn="fadeInLeft">
+          <ScrollAnimation delay={400} animateIn="fadeInLeft" className='devilFireAnimate'>
             <img className='devilFireL' src='https://web.archive.org/web/20091026235054/http://de.geocities.com/duellderchatter/devilfire.gif'/>
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="zoomIn">
+          <ScrollAnimation animateIn="zoomIn" className='titleAnimation'>
             <div className='titleText'>
               <h1>DIGITAL</h1>
               <h3>DUNGEON</h3>
             </div>
           </ScrollAnimation>
-          <ScrollAnimation delay={400} animateIn="fadeInRight">
+          <ScrollAnimation delay={400} animateIn="fadeInRight" className='devilFireAnimate'>
             <img  className='devilFireR' src='https://web.archive.org/web/20091026235054/http://de.geocities.com/duellderchatter/devilfire.gif'/>
           </ScrollAnimation>
         </div>

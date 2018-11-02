@@ -13,7 +13,7 @@ class Characters extends Component {
       </section>
 
       <div className='characterCard'>
-        <h1>CHARACTER 1</h1>
+        <h1>Holy Hezrou</h1>
         <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play
           podcast that attempts to entertain through high-fantasy hi-jinx in the
           digital world of Aoll. Join us as we hit the squared circle with wrestling
@@ -22,7 +22,7 @@ class Characters extends Component {
         </p>
       </div>
       <div className='characterCard'>
-        <h1>CHARACTER 1</h1>
+        <h1>Rudy Cobblehead</h1>
         <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play
           podcast that attempts to entertain through high-fantasy hi-jinx in the
           digital world of Aoll. Join us as we hit the squared circle with wrestling
@@ -31,7 +31,7 @@ class Characters extends Component {
         </p>
       </div>
       <div className='characterCard'>
-        <h1>CHARACTER 1</h1>
+        <h1>Gad</h1>
         <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play
           podcast that attempts to entertain through high-fantasy hi-jinx in the
           digital world of Aoll. Join us as we hit the squared circle with wrestling
