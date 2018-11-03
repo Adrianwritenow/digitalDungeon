@@ -2,14 +2,40 @@ import React, { Component } from 'react';
 import "animate.css/animate.min.css";
 import AboutUs from '../aboutUs';
 import ScrollAnimation from 'react-animate-on-scroll';
-
-
-
-
 import '../../App.css';
 
 
 class SplashPage extends Component {
+
+
+  constructor(props) {
+    super(props)
+    this.mountStyle = this.mountStyle.bind(this)
+    this.state ={ //base css
+      show: true,
+      style :{
+        width:'0px',
+        opacity: 0,
+      }
+    }
+  }
+
+  mountStyle() { // css for mount animation
+  this.setState({
+    style: {
+      width: '280px',
+      height:'294px',
+      opacity: 1,
+      transition: 'all 3.5s ease',
+    }
+  })
+}
+
+  componentDidMount(){
+    setTimeout(this.mountStyle, 10) // call the into animation
+  }
+
+
   render() {
     (function fairyDustCursor() {
 
@@ -157,10 +183,16 @@ class SplashPage extends Component {
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="zoomIn" className='titleAnimation'>
-            <div className='titleText'>
+            <div className='titleText' style={this.state.style}>
               <h1>DIGITAL</h1>
               <h3>DUNGEON</h3>
+              <ScrollAnimation delay={2300} initiallyVisible={false} animateIn="pulse"  className='titleAnimation'>
+                <h4 className='titleFoot'>A LIVE PLAY PODDCAST</h4>
+              </ScrollAnimation>
+
+
             </div>
+
           </ScrollAnimation>
           <ScrollAnimation delay={400} animateIn="fadeInRight" className='devilFireAnimate'>
             <img  className='devilFireR' src='https://web.archive.org/web/20091026235054/http://de.geocities.com/duellderchatter/devilfire.gif'/>
