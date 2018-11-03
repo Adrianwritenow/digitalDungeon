@@ -165,6 +165,7 @@ class SplashPage extends Component {
           <ScrollAnimation delay={400} animateIn="fadeInRight" className='devilFireAnimate'>
             <img  className='devilFireR' src='https://web.archive.org/web/20091026235054/http://de.geocities.com/duellderchatter/devilfire.gif'/>
           </ScrollAnimation>
+
         </div>
         </section>
         <section>

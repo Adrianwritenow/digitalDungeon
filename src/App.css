@@ -71,12 +71,11 @@ margin-bottom: 0px;
     0 0 100px #0ff,
     0 0 150px #0ff;
 
-    margin-top: 10%;
-    /* margin-left: 15%; */
+    width: 450px;
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
 
@@ -99,6 +98,7 @@ margin-bottom: 0px;
 .headerContainer{
   width: 100%;
   position: fixed;
+  z-index: 3;
 }
 
 .navbar{
@@ -221,6 +221,7 @@ align-items: center;
 .titleAnimation{
   display: flex;
 justify-content: center;
+z-index: 1;
 
 }
 
@@ -230,5 +231,5 @@ justify-content: center;
   align-items: center;
 }
 .devilFireAnimate{
-  z-index: 1;
+  z-index: 0;
 }
