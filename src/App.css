@@ -197,6 +197,27 @@ $phone-width: 768px;
   background-image: url('/images/digital_dungeoneers.png');
 }
 
+.slideText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profilePic{
+  width: 300px;
+  animation-duration: 2s;
+
+
+}
+#HH, #GG, #RC{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
 
 .words {
   color: black;
@@ -225,16 +246,16 @@ align-items: center;
 
 }
 #HH{
-background-image:url('/images/hezrouTitle.png');
+/* background-image:url('/images/hezrouTitle.png'); */
 background-color: rgba(204,0,0,0.7);
 }
 #RC{
-  background-image:url('/images/rudyTitle.png');
+  /* background-image:url('/images/rudyTitle.png'); */
   background-color:rgba(51,0,102,0.7);
 
 }
 #GG{
-  background-image:url('/images/gadTitle.png');
+  /* background-image:url('/images/gadTitle.png'); */
   background-color: rgba(51,204,204,0.7);
   height: 120vh;
 

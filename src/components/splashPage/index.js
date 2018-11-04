@@ -186,7 +186,7 @@ class SplashPage extends Component {
             <div className='titleText' style={this.state.style}>
               <h1>DIGITAL</h1>
               <h3>DUNGEON</h3>
-              <ScrollAnimation delay={2300} initiallyVisible={false} animateIn="pulse"  className='titleAnimation'>
+              <ScrollAnimation delay={2100} initiallyVisible={false} animateIn="pulse"  className='titleAnimation'>
                 <h4 className='titleFoot'>A LIVE PLAY PODDCAST</h4>
               </ScrollAnimation>
 

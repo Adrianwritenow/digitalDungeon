@@ -18,35 +18,45 @@ class Characters extends Component {
           <div className='container2'>
           <ScrollAnimation delay={400} animateIn="rubberBand">
             <div className='slide' id='HH'>
-              <h1>Holy Hezrou</h1>
-              <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play
-                podcast that attempts to entertain through high-fantasy hi-jinx in the
-                digital world of Aoll. Join us as we hit the squared circle with wrestling
-                extarodinare Holy Hezrou, hit the books with the ever-studious mage-in-training
-                Rudy Cobblehead, and hit the courtroom with Gad, Tortle Attorney-at-Law!
-              </p>
+              <div className='slideText'>
+                <h1>Holy Hezrou</h1>
+                <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play
+                  podcast that attempts to entertain through high-fantasy hi-jinx in the
+                  digital world of Aoll. Join us as we hit the squared circle with wrestling
+                  extarodinare Holy Hezrou, hit the books with the ever-studious mage-in-training
+                  Rudy Cobblehead, and hit the courtroom with Gad, Tortle Attorney-at-Law!
+                </p>
+              </div>
+                <img src='images/hezrouTitle.png' className='profilePic animated infinite bounce delay-2s"'/>
             </div>
           </ScrollAnimation>
           <ScrollAnimation delay={400} animateIn="fadeIn" duration={3}>
             <div className='slide' id='RC'>
-              <h1>Rudy Cobblehead</h1>
-              <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play
-                podcast that attempts to entertain through high-fantasy hi-jinx in the
-                digital world of Aoll. Join us as we hit the squared circle with wrestling
-                extarodinare Holy Hezrou, hit the books with the ever-studious mage-in-training
-                Rudy Cobblehead, and hit the courtroom with Gad, Tortle Attorney-at-Law!
-              </p>
+              <div className='slideText'>
+                <h1>Rudy Cobblehead</h1>
+                <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play
+                  podcast that attempts to entertain through high-fantasy hi-jinx in the
+                  digital world of Aoll. Join us as we hit the squared circle with wrestling
+                  extarodinare Holy Hezrou, hit the books with the ever-studious mage-in-training
+                  Rudy Cobblehead, and hit the courtroom with Gad, Tortle Attorney-at-Law!
+                </p>
+              </div>
+              <img src='images/rudyTitle.png' className='profilePic animated infinite bounce delay-2s"'/>
+
             </div>
           </ScrollAnimation>
           <ScrollAnimation delay={400} animateIn="tada" duration={2}>
             <div className='slide' id='GG'>
-              <h1>Gad</h1>
-              <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play
-                podcast that attempts to entertain through high-fantasy hi-jinx in the
-                digital world of Aoll. Join us as we hit the squared circle with wrestling
-                extarodinare Holy Hezrou, hit the books with the ever-studious mage-in-training
-                Rudy Cobblehead, and hit the courtroom with Gad, Tortle Attorney-at-Law!
-              </p>
+              <div className='slideText'>
+                <h1>Gad</h1>
+                <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play
+                  podcast that attempts to entertain through high-fantasy hi-jinx in the
+                  digital world of Aoll. Join us as we hit the squared circle with wrestling
+                  extarodinare Holy Hezrou, hit the books with the ever-studious mage-in-training
+                  Rudy Cobblehead, and hit the courtroom with Gad, Tortle Attorney-at-Law!
+                </p>
+              </div>
+                <img src='images/gadTitle.png' className='profilePic animated infinite bounce delay-2s"'/>
             </div>
           </ScrollAnimation>
         </div>
