@@ -208,7 +208,10 @@ $phone-width: 768px;
   width: 300px;
   animation-duration: 2s;
 
+}
 
+.flippy-front, .flippy-back{
+  box-shadow: none!important;
 }
 #HH, #GG, #RC{
   display: flex;
