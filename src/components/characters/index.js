@@ -17,7 +17,7 @@ class Characters extends Component {
     return (
       <div className='characterContainer'>
       <section>
-        <div className='titleContainer'>
+        <div className='titleContainer notSplash'>
           <h1>Characters</h1>
         </div>
       </section>
