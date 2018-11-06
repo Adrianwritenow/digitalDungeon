@@ -256,16 +256,18 @@ align-items: center;
 
 }
 #HH{
-/* background-image:url('/images/hezrouTitle.png'); */
+background-image:url('https://web.archive.org/web/20090904042651/http://geocities.com/beefywrestler/wrestv.gif');
+background-size: cover;
 background-color: rgba(204,0,0,0.7);
 }
 #RC{
-  /* background-image:url('/images/rudyTitle.png'); */
+  background-image:url('https://web.archive.org/web/20091027055602/http://www.geocities.com/wateroracle/images/purpfire.gif');
   background-color:rgba(51,0,102,0.7);
 
 }
 #GG{
-  /* background-image:url('/images/gadTitle.png'); */
+  background-image:url('https://web.archive.org/web/20091027070316/http://geocities.com/mollyspoohpage2/waterani.gif');
+  background-repeat: repeat-y;
   background-color: rgba(51,204,204,0.7);
   height: 120vh;
 
