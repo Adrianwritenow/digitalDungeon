@@ -83,6 +83,14 @@ display:flex;
   justify-content: center;
   height: 10vh!important;
 
+}
+
+.notSplashMain{
+  font-size: 6em;
+
+}
+.notSplashSub{
+  color: orangered;
 
 }
 
@@ -212,13 +220,31 @@ $phone-width: 768px;
 }
 
 .profilePic{
-  width: 300px;
+  width: 350px;
+  height: 500px;
   animation-duration: 2s;
 
 }
 
 .flippy-front, .flippy-back{
   box-shadow: none!important;
+}
+
+.flippy-card{
+  display: flex;
+    align-items: center;
+
+}
+
+.flippy-container{
+  height: 100vh;
+    width: 96vw;
+}
+
+.flippy-front{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 #HH, #GG, #RC{
   display: flex;
@@ -260,16 +286,22 @@ background-image:url('https://web.archive.org/web/20090904042651/http://geocitie
 background-size: cover;
 background-color: rgba(204,0,0,0.7);
 }
+
+#HH>.flippy-container{
+    background-color: rgba(204,0,0,0.7);
+}
 #RC{
   background-image:url('https://web.archive.org/web/20091027055602/http://www.geocities.com/wateroracle/images/purpfire.gif');
   background-color:rgba(51,0,102,0.7);
+  background-repeat: repeat;
+
 
 }
 #GG{
   background-image:url('https://web.archive.org/web/20091027070316/http://geocities.com/mollyspoohpage2/waterani.gif');
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   background-color: rgba(51,204,204,0.7);
-  height: 120vh;
+  height: 100vh;
 
 }
 

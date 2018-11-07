@@ -18,12 +18,17 @@ class Characters extends Component {
       <div className='characterContainer'>
       <section>
         <div className='titleContainer notSplash'>
-          <h1>Characters</h1>
+          <ScrollAnimation animateIn="zoomIn">
+            <h1 className='notSplashMain'>CHARACTERS</h1>
+          </ScrollAnimation>
+          <ScrollAnimation delay={400} animateIn="rotateIn" duration={1}>
+            <h4 className='notSplashSub'>LEARN ABOUT THE CHARACTERS OF AOLL</h4>
+          </ScrollAnimation>
         </div>
       </section>
         <div className='container'>
           <div className='container2'>
-          <ScrollAnimation delay={400} animateIn="rubberBand">
+          <ScrollAnimation animateIn="slideInRight">
             <div className='slide' id='HH'>
             <Flippy
                 flipOnHover={false} // default false
@@ -81,7 +86,7 @@ class Characters extends Component {
               </Flippy>
             </div>
           </ScrollAnimation>
-          <ScrollAnimation delay={400} animateIn="tada" duration={2}>
+          <ScrollAnimation delay={400} animateIn="slideInLeft" duration={1}>
 
 
             <div className='slide cardFront' id='GG'>
