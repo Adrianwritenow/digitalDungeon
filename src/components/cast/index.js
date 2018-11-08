@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import '../../App.css';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+
+
 
 class Cast extends Component {
   render() {
@@ -62,12 +66,12 @@ class Cast extends Component {
         </div>
         <div className='castCard' id='JF'>
           <h1>Joe Chisari AKA Urbvn</h1>
-          <p>While not heard in the podcast, Joe&#39;s work is sprinkled
+          While not heard in the podcast, Joe&#39;s work is sprinkled
            throughout every episode. His music has been described as
            "Chill" and "Wavy", and we are thankful to have it grace our
-           lil project. <a href='urbvnwave.bandcamp.com'>Check his music out!</a>
-
-          </p>
+           lil project.
+          
+          <p className='animated infinite bounce delay-2s'><a href='https://urbvnwave.bandcamp.com'>Check his music out!</a></p>
         </div>
       </div>
 

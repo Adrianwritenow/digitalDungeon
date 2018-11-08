@@ -101,7 +101,7 @@ class Characters extends Component {
             >
 
             <FrontSide>
-                <img src='images/gadTitle.png' ref={this.backCard} className='profilePic animated infinite bounce delay-2s"' onClick={this.showBack}/>
+                <img src='images/gadTitle.png' ref={this.backCard} className='profilePic animated infinite bounce delay-2s' onClick={this.showBack}/>
               </FrontSide>
               <BackSide style={{ backgroundColor: '#175852'}}>
                 <div className='slideText' ref={this.frontCard} onClick={this.showFront}>
