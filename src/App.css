@@ -86,11 +86,13 @@ display:flex;
 }
 
 .notSplashMain{
-  font-size: 6em;
+  font-size: 50px;
 
 }
 .notSplashSub{
   color: orangered;
+  font-size: 14px;
+
 
 }
 
