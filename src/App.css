@@ -282,19 +282,32 @@ ul, ol {
 justify-content: center;
 align-items: center;
 
+
+}
+
+.characterContainer{
+  font-family: 'Raleway', sans-serif;
+
+
+}
+
+.castContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #HH{
 background-image:url('https://web.archive.org/web/20090904042651/http://geocities.com/beefywrestler/wrestv.gif');
 background-size: cover;
-background-color: rgba(204,0,0,0.7);
 }
 
 #HH>.flippy-container{
-    background-color: rgba(204,0,0,0.7);
+    background-color:rgba(51,0,102,0.7);
+
 }
 #RC{
-  background-image:url('https://web.archive.org/web/20091027055602/http://www.geocities.com/wateroracle/images/purpfire.gif');
-  background-color:rgba(51,0,102,0.7);
+  background-image:url('https://web.archive.org/web/20091018215218/http://sg.geocities.com/farroch2050/Propolis/anim3/WallFire.gif');
+  background-color: rgba(204,0,0,0.7);
   background-repeat: repeat;
 
 
@@ -302,8 +315,11 @@ background-color: rgba(204,0,0,0.7);
 #GG{
   background-image:url('https://web.archive.org/web/20091027070316/http://geocities.com/mollyspoohpage2/waterani.gif');
   background-repeat: repeat;
-  background-color: rgba(51,204,204,0.7);
   height: 100vh;
+
+}
+#GG>.flippy-container{
+  background-color: rgba(102,204,153,0.5);
 
 }
 
@@ -328,12 +344,23 @@ z-index: 1;
   width:50px;
   height:70px;
 }
+.castCrewSub{
+  color: orangered;
+}
+.castCrew{
+  font-size: 65px;
+}
 
 .castCard{
   height: 66vh;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width:95%;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 #MJ{

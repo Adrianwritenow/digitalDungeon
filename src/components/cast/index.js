@@ -14,7 +14,8 @@ class Cast extends Component {
       <section>
 
       <div className='titleContainer notSplash'>
-        <h1>CAST & CREW</h1>
+        <h1 className='castCrew'>CAST & CREW</h1>
+        <h4 className='castCrewSub'>GET TO KNOW THE PEOPLE BEHIND THE SCENES</h4>
       </div>
       </section>
         <div className='castCard' id='MJ'>
@@ -65,13 +66,14 @@ class Cast extends Component {
           </p>
         </div>
         <div className='castCard' id='JF'>
-          <h1>Joe Chisari AKA Urbvn</h1>
-          While not heard in the podcast, Joe&#39;s work is sprinkled
-           throughout every episode. His music has been described as
-           "Chill" and "Wavy", and we are thankful to have it grace our
-           lil project.
-          
-          <p className='animated infinite bounce delay-2s'><a href='https://urbvnwave.bandcamp.com'>Check his music out!</a></p>
+          <div className='textBox'>
+            <h1>Joe Chisari AKA Urbvn</h1>
+            While not heard in the podcast, Joe&#39;s work is sprinkled
+             throughout every episode. His music has been described as
+             "Chill" and "Wavy", and we are thankful to have it grace our
+             lil project.
+            <p className='animated infinite bounce delay-2s'><a href='https://urbvnwave.bandcamp.com'>Check his music out!</a></p>
+          </div>
         </div>
       </div>
 
