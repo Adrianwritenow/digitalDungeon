@@ -137,9 +137,10 @@ section{
 
 
 .aboutUsCard{
-  width: 70%;
-  background-color: rgba(52, 64, 64, .65);
-  box-shadow: 6px 6px 60px green;
+  width: 100%;
+  font-size: 1.7em;
+  background-image:linear-gradient(rgba(52, 64, 64, .20),rgba(52, 64, 64, .75),rgba(52, 64, 64, .75),rgba(52, 64, 64, .95),rgba(102,0,102,0.1));
+
 }
 
 .demBoys{
@@ -202,7 +203,10 @@ $phone-width: 768px;
 }
 
 #slide1 {
-  background-image: url('/images/gad.png');
+  /* background-image: url('/images/gad.png'); */
+  font-family: 'Raleway', sans-serif;
+
+
 }
 #slide2 {
   background-image: url('/images/digital_dungeoneers.png');
@@ -335,6 +339,7 @@ z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .devilFireAnimate{
   z-index: 0;
