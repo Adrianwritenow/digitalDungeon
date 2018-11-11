@@ -10,22 +10,20 @@ class Header extends Component {
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a className='navLink'>Home</a>
+              <a className='navLink' href="/">Home</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} href="/">
-              <a className='navLink'>About</a>
-              </NavItem>
-              <NavItem eventKey={2} href="/cast">
+
+              <NavItem eventKey={1} href="/cast">
               <a className='navLink'>Cast</a>
               </NavItem>
-              <NavItem eventKey={3} href="/characters">
+              <NavItem eventKey={2} href="/characters">
               <a className='navLink'>Characters</a>
               </NavItem>
-              <NavItem eventKey={4} href="#">
+              <NavItem eventKey={3} href="#">
               <a className='navLink'>Support</a>
               </NavItem>
             </Nav>

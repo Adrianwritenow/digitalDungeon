@@ -123,6 +123,8 @@ display:flex;
   width: 100%;
   position: fixed;
   z-index: 3;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 .navbar{
@@ -289,6 +291,14 @@ align-items: center;
 
 }
 
+.castWrapper>section{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
 .characterContainer{
   font-family: 'Raleway', sans-serif;
 
@@ -299,6 +309,7 @@ align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: linear-gradient(rgba(102,0,102,0),rgba(102,0,102,0.9),rgba(102,0,102,0));
 }
 #HH{
 background-image:url('https://web.archive.org/web/20090904042651/http://geocities.com/beefywrestler/wrestv.gif');
@@ -311,7 +322,7 @@ background-size: cover;
 }
 #RC{
   background-image:url('https://web.archive.org/web/20091018215218/http://sg.geocities.com/farroch2050/Propolis/anim3/WallFire.gif');
-  background-color: rgba(204,0,0,0.7);
+  background-color: rgba(73, 3, 3, 0.7);
   background-repeat: repeat;
 
 
@@ -357,24 +368,39 @@ z-index: 1;
 }
 
 .castCard{
-  height: 66vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width:95%;
-  color: white;
+  color: antiquewhite;
   font-family: 'Raleway', sans-serif;
+  padding: 15px;
+  font-size: 1.25em;
+  font-weight: bolder;
 
 }
-
-#MJ{
-  background-image:linear-gradient(rgba(255,0,0,0),rgba(255,0,0,0.7),rgba(102,0,102,0.7));
+.castCard>h1{
+  text-align: center;
+  font-weight: lighter;
 }
-#FK{
-  background-image:linear-gradient(rgba(102,0,102,0.7),rgba(102,0,102,0.9),rgba(102,204,204,0.7));
+#MJ>h1{
+  background-image:linear-gradient(white,rgba(102,0,102,0.9));
+  color: transparent;
+  background-clip: text;
+  padding: 5%;
 }
-#AR{
-  background-image:linear-gradient(rgba(102,204,204,0.7),rgba(102,204,204,0.9),rgba(102,0,102,0));
+#FK>h1{
+  background-image:linear-gradient(white,rgba(255,0,0,1));
+  color: transparent;
+  background-clip: text;
+  padding: 5%;
+}
+#AR>h1{
 
+  background-image:linear-gradient(white,rgba(102,204,204,1));
+  color: transparent;
+  background-clip: text;
+  padding: 5%;
 }
