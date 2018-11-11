@@ -309,7 +309,7 @@ align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: linear-gradient(rgba(102,0,102,0),rgba(102,0,102,0.9),rgba(102,0,102,0));
+  background-image: linear-gradient(rgba(102,0,102,0),rgba(6, 0, 102, 0.3),rgba(102,0,102,0.3),rgba(99, 1, 1, 0.3),rgba(3, 99, 1, 0.3));
 }
 #HH{
 background-image:url('https://web.archive.org/web/20090904042651/http://geocities.com/beefywrestler/wrestv.gif');
