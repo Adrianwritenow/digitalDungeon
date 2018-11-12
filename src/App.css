@@ -173,7 +173,8 @@ display:flex;
 }
 .navbar-brand{
   font-size: 1em;
-  color: #fff!important;
+  /* color: #fff!important; */
+  color: red!important;
   -webkit-transition: color,text-shadow .25s ease-in;
   transition: color,text-shadow .25s ease-in;
 }
