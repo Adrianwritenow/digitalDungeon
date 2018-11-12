@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import "animate.css/animate.min.css";
 import AboutUs from '../aboutUs';
+import ContactUs from '../contactUs';
+
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../../App.css';
 
@@ -8,7 +10,7 @@ import '../../App.css';
 class SplashPage extends Component {
 
   render() {
-  
+
     return (
 
 
@@ -33,7 +35,7 @@ class SplashPage extends Component {
 
           </ScrollAnimation>
           <ScrollAnimation delay={400} animateIn="fadeInRight" className='devilFireAnimate'>
-            <img  className='devilFireR' src='https://web.archive.org/web/20091026235054/http://de.geocities.com/duellderchatter/devilfire.gif'/>
+            <img className='devilFireR' src='https://web.archive.org/web/20091026235054/http://de.geocities.com/duellderchatter/devilfire.gif'/>
           </ScrollAnimation>
 
         </div>
@@ -41,6 +43,8 @@ class SplashPage extends Component {
         <section>
           <AboutUs />
         </section>
+        <ContactUs />
+
       </div>
     );
   }
