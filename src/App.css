@@ -125,8 +125,7 @@ display:flex;
 }
 .notSplashSub{
   color: orangered;
-  font-size: 14px;
-
+font-size: 1.4em;
 
 }
 
@@ -408,6 +407,10 @@ ul, ol {
   font-family: 'Raleway', sans-serif;
 
 
+}
+
+.characterTitle{
+  font-size: 5em;
 }
 
 .castContainer{

@@ -19,7 +19,7 @@ class Characters extends Component {
       <section>
         <div className='titleContainer notSplash'>
           <ScrollAnimation animateIn="zoomIn">
-            <h1 className='notSplashMain'>CHARACTERS</h1>
+            <h1 className='notSplashMain characterTitle'>CHARACTERS</h1>
           </ScrollAnimation>
           <ScrollAnimation delay={400} animateIn="rotateIn" duration={1}>
             <h4 className='notSplashSub'>LEARN ABOUT THE CHARACTERS OF AOLL</h4>
