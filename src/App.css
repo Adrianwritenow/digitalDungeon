@@ -24,7 +24,6 @@ html{
 
 body, main{
  background-image:url("http://a1star.com/images/starsglow1.gif");
-font-family:"Comic Sans MS", "Comic Sans";
 display:-webkit-box;
 display:-ms-flexbox;
 display:flex;
@@ -538,4 +537,40 @@ z-index: 1;
   color: transparent;
   background-clip: text;
   padding: 5%;
+}
+
+.contactUsContainer{
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width:80vw;
+
+
+}
+
+
+.contactUsContainer>form{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.contactUsContainer>form>input,textarea{
+  width:80vw;
+  font-size: 1.3em
+
+}
+.contactUsContainer>form>textarea{
+  height: 40vh;
+}
+
+
+
+.submitButton{
+  color: orangered;
+  background-color:blue;
 }

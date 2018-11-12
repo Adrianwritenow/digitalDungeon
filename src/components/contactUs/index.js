@@ -7,9 +7,11 @@ class ContactUs extends Component {
     return (
       <div className='contactUsContainer'>
         <form action="https://formspree.io/adrianwritenow@gmail.com" method="POST">
-          <input type="text" name="name"/>
-          <input type="email" name="_replyto"/>
-          <input type="submit" value="Send"/>
+          <input placeholder='YOUR NAME'type="text" name="name"/>
+          <input placeholder='YOUR EMAIL' type="email" name="_replyto"/>
+          <textarea placeholder='WHAT??' type="text" name="_replyto"/>
+
+          <button className='submitButton' type="submit">SEND</button>
           <input type='hidden' name='_next' value='/thankYou'/>
         </form>
       </div>
