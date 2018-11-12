@@ -6,10 +6,12 @@ import '../../App.css';
 
 
 class SplashPage extends Component {
+
   render() {
-
-
+  
     return (
+
+
       <div className="splashContainer">
         <section className='titleSection'>
         <div className='titleContainer'>
