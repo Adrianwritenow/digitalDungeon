@@ -1,14 +1,23 @@
 html{
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 
 .App{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 100%;
 }
 
@@ -16,13 +25,19 @@ html{
 body, main{
  background-image:url("http://a1star.com/images/starsglow1.gif");
 font-family:"Comic Sans MS", "Comic Sans";
+display:-webkit-box;
+display:-ms-flexbox;
 display:flex;
   color:gold;
 }
 
 .footerContainer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 50px;
   background-color: red;
@@ -35,25 +50,35 @@ display:flex;
 .footerContainer img{
   width: 8vh;
   margin-left: 28px;
-  box-shadow: 10px 0px 10px black;
+  -webkit-box-shadow: 10px 0px 10px black;
+          box-shadow: 10px 0px 10px black;
   border-radius: 100%;
+  -webkit-transition: padding,-webkit-box-shadow .5s;
+  transition: padding,-webkit-box-shadow .5s;
   transition: padding,box-shadow .5s ;
+  transition: padding,box-shadow .5s,-webkit-box-shadow .5s;
 
 
 }
 
 .footerContainer img:hover{
   width: 8vh;
-  box-shadow: 3px 0px 5px black;
+  -webkit-box-shadow: 3px 0px 5px black;
+          box-shadow: 3px 0px 5px black;
   border-radius: 100%;
   padding: 1px;
 
 }
 
 .splashContainer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex ;
-  justify-content: center ;
-  flex-wrap: wrap;
+  -webkit-box-pack: center ;
+      -ms-flex-pack: center ;
+          justify-content: center ;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 100%;
   width: 90%;
 }
@@ -72,15 +97,24 @@ display:flex;
     0 0 150px #0ff;
     height: 300px;
     width: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 
 .notSplash{
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 10vh!important;
 
 }
@@ -98,9 +132,14 @@ display:flex;
 
 .titleText{
   width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   position: absolute;
   border-top: 3px dashed orangered;
@@ -135,6 +174,7 @@ display:flex;
 .navbar-brand{
   font-size: 1em;
   color: #fff!important;
+  -webkit-transition: color,text-shadow .25s ease-in;
   transition: color,text-shadow .25s ease-in;
 }
 .navbar-brand:hover{
@@ -144,6 +184,7 @@ display:flex;
 
 .navLink{
   font-size: 1em;
+  -webkit-transition: color,text-shadow .25s ease-in;
   transition: color,text-shadow .25s ease-in;
   color:#fff;
       text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 7px #0ff, 0 0 15px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 45px #0ff;
@@ -163,6 +204,7 @@ section{
 .aboutUsCard{
   width: 100%;
   font-size: 1.7em;
+  background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(52, 64, 64, .20)),color-stop(rgba(52, 64, 64, .75)),color-stop(rgba(52, 64, 64, .75)),color-stop(rgba(52, 64, 64, .95)),to(rgba(102,0,102,0.1)));
   background-image:linear-gradient(rgba(52, 64, 64, .20),rgba(52, 64, 64, .75),rgba(52, 64, 64, .75),rgba(52, 64, 64, .95),rgba(102,0,102,0.1));
 
 }
@@ -219,8 +261,12 @@ $phone-width: 768px;
 
   // text center
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-size: 60vh;
     background-repeat: no-repeat;
 
@@ -243,26 +289,39 @@ $phone-width: 768px;
 }
 
 .slideText{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .profilePic{
   width: 350px;
   height: 500px;
-  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 
 }
 
 .flippy-front, .flippy-back{
-  box-shadow: none!important;
+  -webkit-box-shadow: none!important;
+          box-shadow: none!important;
 }
 
 .flippy-card{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 
@@ -273,14 +332,25 @@ $phone-width: 768px;
 
 .flippy-front{
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #HH, #GG, #RC{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
 }
 
@@ -306,17 +376,29 @@ ul, ol {
 }
 
 .characterContainer> section, .castContainer> section{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-justify-content: center;
-align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 
 
 }
 
 .castWrapper>section{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100vh;
 
 }
@@ -328,9 +410,15 @@ align-items: center;
 }
 
 .castContainer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(102,0,102,0)),color-stop(rgba(6, 0, 102, 0.3)),color-stop(rgba(102,0,102,0.3)),color-stop(rgba(99, 1, 1, 0.3)),to(rgba(3, 99, 1, 0.3)));
   background-image: linear-gradient(rgba(102,0,102,0),rgba(6, 0, 102, 0.3),rgba(102,0,102,0.3),rgba(99, 1, 1, 0.3),rgba(3, 99, 1, 0.3));
 }
 #HH{
@@ -362,16 +450,26 @@ background-size: cover;
 
 
 .titleAnimation{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 z-index: 1;
 
 }
 
 .titleSection{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
 }
 .devilFireAnimate{
@@ -391,10 +489,17 @@ z-index: 1;
 
 .castCard{
   height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width:95%;
   color: antiquewhite;
   font-family: 'Raleway', sans-serif;
@@ -408,18 +513,22 @@ z-index: 1;
   font-weight: lighter;
 }
 #MJ>h1{
+  background-image:-webkit-gradient(linear,left top, left bottom,from(white),to(rgba(102,0,102,0.9)));
   background-image:linear-gradient(white,rgba(102,0,102,0.9));
   color: transparent;
   background-clip: text;
   padding: 5%;
 }
 #FK>h1{
+  background-image:-webkit-gradient(linear,left top, left bottom,from(white),to(rgba(255,0,0,1)));
   background-image:linear-gradient(white,rgba(255,0,0,1));
   color: transparent;
   background-clip: text;
   padding: 5%;
 }
 #AR>h1{
+
+  background-image:-webkit-gradient(linear,left top, left bottom,from(white),to(rgba(102,204,204,1)));
 
   background-image:linear-gradient(white,rgba(102,204,204,1));
   color: transparent;
