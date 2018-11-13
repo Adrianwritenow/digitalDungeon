@@ -9,8 +9,8 @@ class AboutUs extends Component {
         <div className='aboutUsCard'>
         <div className="container">
           <div className="container-2">
-            <div id="slide1" className="slide">
-              <div className="title">
+            <div id="slide1" className="slide titleWrapper">
+              <div className="title aboutUsWrapper">
                 <h1>ABOUT US</h1>
                 <p>Digital Dungeon is a Dungeons and Dragons 5th edition actual-play
                   podcast that attempts to entertain through high-fantasy hi-jinx in the
