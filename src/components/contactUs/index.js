@@ -10,7 +10,7 @@ class ContactUs extends Component {
           <form action="https://formspree.io/adrianwritenow@gmail.com" method="POST">
             <input placeholder='YOUR NAME'type="text" name="name"/>
             <input placeholder='YOUR EMAIL' type="email" name="_replyto"/>
-            <textarea placeholder='WHAT??' type="text" name="_replyto"/>
+            <textarea placeholder='WHAT??' type="text" name="message"/>
 
             <button className='submitButton' type="submit">SEND</button>
             <input type='hidden' name='_next' value='/thankYou'/>
