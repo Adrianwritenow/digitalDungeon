@@ -43,7 +43,10 @@ class SplashPage extends Component {
         <section>
           <AboutUs />
         </section>
-        <ContactUs />
+        <section className='contactWrapper'>
+          <h1>CONTACT US</h1>
+          <ContactUs />
+        </section>
 
       </div>
     );
