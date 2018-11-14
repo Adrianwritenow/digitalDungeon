@@ -368,6 +368,7 @@ $phone-width: 768px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+        max-width: 900px;
 
 }
 
@@ -420,6 +421,12 @@ ul, ol {
 
 }
 
+.characterWrapper{
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
 .characterContainer{
   font-family: 'Raleway', sans-serif;
 
@@ -527,6 +534,7 @@ z-index: 1;
   padding: 15px;
   font-size: 1.25em;
   font-weight: bolder;
+  max-width: 800px;
 
 }
 .castCard>h1{
@@ -555,6 +563,10 @@ z-index: 1;
   color: transparent;
   background-clip: text;
   padding: 5%;
+}
+
+#JC>.textBox>h1{
+  text-align: center;
 }
 
 .contactUsContainer{

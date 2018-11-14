@@ -27,7 +27,7 @@ class Characters extends Component {
         </div>
       </section>
         <div className='container'>
-          <div className='container2'>
+          <div className='container2 characterWrapper'>
           <ScrollAnimation animateIn="slideInRight">
             <div className='slide' id='HH'>
             <Flippy
