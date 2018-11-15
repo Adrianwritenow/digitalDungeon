@@ -31,14 +31,14 @@ class Cast extends Component {
             Noise-Rock band Witchbender.
           </p>
         </div>
-        <div className='castCard' id='JF'>
-          <div className='textBox'>
+        <div className='castCard' id='JC'>
             <h1>Joe Chisari AKA Urbvn</h1>
-            While not heard in the podcast, Joe&#39;s work is sprinkled
-             throughout every episode. His music has been described as
-             "Chill" and "Wavy", and we are thankful to have it grace our
-             lil project.
-            <p className='animated infinite bounce delay-2s'><a href='https://urbvnwave.bandcamp.com'>Check his music out!</a></p>
+            <div className='textBox'>
+              <p>While not heard in the podcast, Joe&#39;s work is sprinkled
+               throughout every episode. His music has been described as
+               "Chill" and "Wavy", and we are thankful to have it grace our
+               lil project.</p>
+              <p className='animated infinite bounce delay-2s'><a href='https://urbvnwave.bandcamp.com'>Check his music out!</a></p>
           </div>
         </div>
 

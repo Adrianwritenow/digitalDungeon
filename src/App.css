@@ -183,8 +183,8 @@ font-size: 1.4em;
 
 .navLink{
   font-size: 1em;
-  -webkit-transition: color,text-shadow .25s ease-in;
-  transition: color,text-shadow .25s ease-in;
+  -webkit-transition: color .25s ease-in,text-shadow .25s ease-in;
+  transition: color .25s ease-in,text-shadow .25s ease-in;
   color:#fff;
   text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 7px #0ff, 0 0 15px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 45px #0ff;
   text-decoration: none!important;
@@ -513,6 +513,7 @@ z-index: 1;
 }
 .castCrew{
   font-size: 65px;
+  
 }
 
 .castCard{
@@ -656,4 +657,7 @@ z-index: 1;
   text-align: center;
   color: orangered;
   text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 7px #0ff, 0 0 15px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 45px #0ff;
+}
+.skullLeft{
+  transform: scaleX(-1);
 }
